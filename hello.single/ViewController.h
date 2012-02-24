@@ -10,8 +10,10 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *mainLabel;
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 -(IBAction)displayMessage:(id)sender;
 
+- (IBAction)changeGreeting:(id)sender;
 
 @end

@@ -10,11 +10,15 @@
 
 @implementation ViewController
 @synthesize mainLabel;
+@synthesize textField;
 
 - (IBAction)displayMessage:(id)sender {
     
     mainLabel.text = @"Hello World!";
     
+}
+
+- (IBAction)changeGreeting:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +38,7 @@
 - (void)viewDidUnload
 {
     [self setMainLabel:nil];
+    [self setTextField:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
