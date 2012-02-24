@@ -11,6 +11,7 @@
 @implementation ViewController
 @synthesize mainLabel;
 @synthesize textField;
+@synthesize userName = _userName;
 
 - (IBAction)displayMessage:(id)sender {
     
@@ -19,6 +20,24 @@
 }
 
 - (IBAction)changeGreeting:(id)sender {
+    
+    self.userName = self.textField.text;
+    
+    NSString *nameString = self.userName;
+    if([nameString length] == 0) {
+        nameString = @"World";
+    }
+    NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
+    
+    self.mainLabel.text = greeting;
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+    if (theTextField == self.textField) {
+        [theTextField resignFirstResponder];
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
