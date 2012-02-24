@@ -37,20 +37,20 @@
 		DA35B71A14F5945C00C36FB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA35B71C14F5945C00C36FB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA35B71E14F5945C00C36FB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DA35B72214F5945C00C36FB9 /* hello.single-Info.plist */ = {isa = PBXFileReference; path = "hello.single-Info.plist"; sourceTree = "<group>"; };
+		DA35B72214F5945C00C36FB9 /* hello.single-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hello.single-Info.plist"; sourceTree = "<group>"; };
 		DA35B72414F5945C00C36FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA35B72614F5945C00C36FB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA35B72814F5945C00C36FB9 /* hello.single-Prefix.pch */ = {isa = PBXFileReference; path = "hello.single-Prefix.pch"; sourceTree = "<group>"; };
-		DA35B72914F5945C00C36FB9 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA35B72814F5945C00C36FB9 /* hello.single-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hello.single-Prefix.pch"; sourceTree = "<group>"; };
+		DA35B72914F5945C00C36FB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA35B72A14F5945C00C36FB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DA35B72D14F5945C00C36FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		DA35B72F14F5945C00C36FB9 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		DA35B72F14F5945C00C36FB9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DA35B73014F5945C00C36FB9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA35B73714F5945C00C36FB9 /* hello.singleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hello.singleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA35B73814F5945C00C36FB9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DA35B74014F5945C00C36FB9 /* hello.singleTests-Info.plist */ = {isa = PBXFileReference; path = "hello.singleTests-Info.plist"; sourceTree = "<group>"; };
+		DA35B74014F5945C00C36FB9 /* hello.singleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hello.singleTests-Info.plist"; sourceTree = "<group>"; };
 		DA35B74214F5945C00C36FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DA35B74414F5945C00C36FB9 /* hello_singleTests.h */ = {isa = PBXFileReference; path = hello_singleTests.h; sourceTree = "<group>"; };
+		DA35B74414F5945C00C36FB9 /* hello_singleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello_singleTests.h; sourceTree = "<group>"; };
 		DA35B74514F5945C00C36FB9 /* hello_singleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hello_singleTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -362,6 +362,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hello.single/hello.single-Prefix.pch";
 				INFOPLIST_FILE = "hello.single/hello.single-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,6 +374,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hello.single/hello.single-Prefix.pch";
 				INFOPLIST_FILE = "hello.single/hello.single-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -431,6 +433,7 @@
 				DA35B74B14F5945C00C36FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA35B74C14F5945C00C36FB9 /* Build configuration list for PBXNativeTarget "hello.singleTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +442,7 @@
 				DA35B74E14F5945C00C36FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

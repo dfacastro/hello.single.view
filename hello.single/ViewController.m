@@ -9,6 +9,13 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize mainLabel;
+
+- (IBAction)displayMessage:(id)sender {
+    
+    mainLabel.text = @"Hello World!";
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +33,7 @@
 
 - (void)viewDidUnload
 {
+    [self setMainLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
